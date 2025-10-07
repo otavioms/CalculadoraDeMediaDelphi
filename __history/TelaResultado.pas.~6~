@@ -1,0 +1,53 @@
+﻿unit TelaResultado;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmTelaResultado = class(TForm)
+    gbxResultado: TGroupBox;
+    lblMediaFinal: TLabel;
+    lblSituacao: TLabel;
+    lblResultadoSituacao: TLabel;
+    lblResultadoMediaFinal: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure MostrarResultado(const MediaFinal: Double; const Situacao: Char);
+  end;
+
+var
+  frmTelaResultado: TfrmTelaResultado;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmTelaResultado.MostrarResultado(const MediaFinal: Double; const Situacao: Char);
+begin
+  lblResultadoMediaFinal.Caption := 'Média final: ' + FormatFloat('0.00', MediaFinal);
+
+  case Situacao of
+    '1':
+      begin
+        lblSituacao.Caption := '✅ Aprovado!';
+        lblSituacao.Font.Color := clGreen;
+      end;
+    '2':
+      begin
+        lblSituacao.Caption := '⚠ Recuperação';
+        lblSituacao.Font.Color := clOlive;
+      end;
+    '3':
+      begin
+        lblSituacao.Caption := '❎ Reprovado';
+        lblSituacao.Font.Color := clRed;
+      end;
+  end;
+end;
+
+end.

@@ -2,9 +2,12 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2025/08/12 21:03:51.000.851,=C:\Users\otavi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/09/05 20:46:19.483,=C:\Users\otavi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/09/05 20:58:58.571,C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\TelaPrincipal.pas=C:\Users\otavi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/09/05 20:58:58.571,C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\TelaPrincipal.dfm=C:\Users\otavi\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2025/09/05 20:59:06.811,C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\CalculadoraDeMedia.dproj=C:\Users\otavi\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/09/05 20:46:19.000.483,=C:\Users\otavi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/09/05 20:58:58.000.571,C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\TelaPrincipal.dfm=C:\Users\otavi\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2025/09/05 20:58:58.000.571,C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\TelaPrincipal.pas=C:\Users\otavi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/09/05 20:59:06.000.811,C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\CalculadoraDeMedia.dproj=C:\Users\otavi\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/10/06 22:01:53.106,=C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\Unit1.pas</Transaction>
+    <Transaction>2025/10/06 22:02:04.670,C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\TelaResultado.pas=C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\Unit1.pas</Transaction>
+    <Transaction>2025/10/06 22:02:04.670,C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\TelaResultado.dfm=C:\Users\otavi\Meu\Estudos\Curso Delphi\1 - Introdução ao Delphi\Avaliacao\CalculadoraDeMedia\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

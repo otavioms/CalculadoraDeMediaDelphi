@@ -3,7 +3,7 @@ object frmTelaPrincipal: TfrmTelaPrincipal
   Top = 0
   BorderStyle = bsDialog
   Caption = 'Calculadora de m'#233'dia'
-  ClientHeight = 310
+  ClientHeight = 210
   ClientWidth = 233
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -74,41 +74,5 @@ object frmTelaPrincipal: TfrmTelaPrincipal
     Caption = 'Calcular M'#233'dia'
     TabOrder = 1
     OnClick = btnCalcularMediaClick
-  end
-  object gbxResultado: TGroupBox
-    Left = 17
-    Top = 222
-    Width = 199
-    Height = 73
-    Caption = 'Resultado'
-    TabOrder = 2
-    object lblMediaFinal: TLabel
-      Left = 9
-      Top = 24
-      Width = 62
-      Height = 15
-      Caption = 'M'#233'dia final:'
-    end
-    object lblSituacao: TLabel
-      Left = 9
-      Top = 45
-      Width = 48
-      Height = 15
-      Caption = 'Situa'#231#227'o:'
-    end
-    object lblResultadoSituacao: TLabel
-      Left = 86
-      Top = 45
-      Width = 107
-      Height = 15
-      Caption = 'Aguardando c'#225'lculo'
-    end
-    object lblResultadoMediaFinal: TLabel
-      Left = 86
-      Top = 24
-      Width = 15
-      Height = 15
-      Caption = '0,0'
-    end
   end
 end

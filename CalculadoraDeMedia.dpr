@@ -2,7 +2,8 @@ program CalculadoraDeMedia;
 
 uses
   Vcl.Forms,
-  TelaPrincipal in 'TelaPrincipal.pas' {frmTelaPrincipal};
+  TelaPrincipal in 'TelaPrincipal.pas' {frmTelaPrincipal},
+  TelaResultado in 'TelaResultado.pas' {frmTelaResultado};
 
 {$R *.res}
 

@@ -3,6 +3,7 @@
 interface
 
 uses
+  TelaResultado,
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
@@ -16,11 +17,6 @@ type
     lblNota2: TLabel;
     lblNota3: TLabel;
     btnCalcularMedia: TButton;
-    gbxResultado: TGroupBox;
-    lblMediaFinal: TLabel;
-    lblSituacao: TLabel;
-    lblResultadoSituacao: TLabel;
-    lblResultadoMediaFinal: TLabel;
     procedure btnCalcularMediaClick(Sender: TObject);
     procedure ValidaCampos(Sender: TObject);
   private
@@ -29,8 +25,6 @@ type
     Situacao: char;
     function CalcularMedia(nota1, nota2, nota3: Double): Double;
     procedure VerificarSituacao;
-    procedure PreencheMediaFinal;
-    procedure PreencheSituacao;
   public
     { Public declarations }
   end;
@@ -77,30 +71,6 @@ begin
     Situacao := '3'
 end;
 
-procedure TfrmTelaPrincipal.PreencheMediaFinal;
-begin
-  lblResultadoMediaFinal.Caption := FloatToStrF(MediaFinal, ffNumber, 7, 2);
-end;
-
-procedure TfrmTelaPrincipal.PreencheSituacao;
-begin
-  if (Situacao = '1') then
-  begin
-    lblResultadoSituacao.Caption := '✅ Aprovado!';
-    lblResultadoSituacao.Font.Color :=clGreen
-  end
-  else if (Situacao = '2') then
-  begin
-    lblResultadoSituacao.Caption := '⚠ Recuperação';
-    lblResultadoSituacao.Font.Color :=clOlive
-  end
-  else if (Situacao = '3') then
-  begin
-    lblResultadoSituacao.Caption := '❎ Reprovado';
-    lblResultadoSituacao.Font.Color :=clRed
-  end;
-end;
-
 procedure TfrmTelaPrincipal.btnCalcularMediaClick(Sender: TObject);
 begin
   var nota1: Double := StrToFloatDef(edtNota1.Text, 0);
@@ -109,8 +79,14 @@ begin
 
   CalcularMedia(nota1, nota2, nota3);
   VerificarSituacao;
-  PreencheMediaFinal;
-  PreencheSituacao;
+
+  frmTelaResultado := TfrmTelaResultado.Create(Self);
+  try
+    frmTelaResultado.MostrarResultado(MediaFinal, Situacao);
+    frmTelaResultado.ShowModal;
+  finally
+    frmTelaResultado.Free;
+  end;
 end;
 
 end.

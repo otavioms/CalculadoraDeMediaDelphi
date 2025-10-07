@@ -1,0 +1,56 @@
+unit TelaResultado;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmTelaResultado = class(TForm)
+    gbxResultado: TGroupBox;
+    lblMediaFinal: TLabel;
+    lblSituacao: TLabel;
+    lblResultadoSituacao: TLabel;
+    lblResultadoMediaFinal: TLabel;
+  private
+    { Private declarations }
+    procedure PreencheMediaFinal;
+    procedure PreencheSituacao;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTelaResultado: TfrmTelaResultado;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TfrmTelaCadastro.PreencheMediaFinal;
+begin
+  lblResultadoMediaFinal.Caption := FloatToStrF(MediaFinal, ffNumber, 7, 2);
+end;
+
+procedure TfrmTelaCadastro.PreencheSituacao;
+begin
+  if (Situacao = '1') then
+  begin
+    lblResultadoSituacao.Caption := '? Aprovado!';
+    lblResultadoSituacao.Font.Color :=clGreen
+  end
+  else if (Situacao = '2') then
+  begin
+    lblResultadoSituacao.Caption := '? Recuperação';
+    lblResultadoSituacao.Font.Color :=clOlive
+  end
+  else if (Situacao = '3') then
+  begin
+    lblResultadoSituacao.Caption := '? Reprovado';
+    lblResultadoSituacao.Font.Color :=clRed
+  end;
+end;
+
+end.

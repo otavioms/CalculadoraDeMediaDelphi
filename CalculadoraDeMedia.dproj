@@ -127,6 +127,10 @@
             <Form>frmTelaPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="TelaResultado.pas">
+            <Form>frmTelaResultado</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
